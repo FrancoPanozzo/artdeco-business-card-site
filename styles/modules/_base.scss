@@ -13,3 +13,18 @@ a {
     color: var(--text);
   }
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--titles-ff);
+  font-weight: 400;
+}
+// temporary
+
+img {
+  width: 100px;
+}
