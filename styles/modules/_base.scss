@@ -1,0 +1,15 @@
+body {
+  font-family: var(--text-ff);
+  font-weight: 300;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.4;
+}
+
+a {
+  color: var(--highlight);
+
+  &:hover {
+    color: var(--text);
+  }
+}
