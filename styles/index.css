@@ -8,9 +8,23 @@ a { color: var(--highlight); }
 
 a:hover { color: var(--text); }
 
-h1, h2, h3, h4, h5, h6 { font-family: var(--titles-ff); font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--titles-ff); font-weight: 400; text-transform: capitalize; margin-bottom: 0.75em; }
+
+h1 { font-size: 7.75vw; cursor: default; text-transform: uppercase; line-height: 1; margin-bottom: 0; letter-spacing: 15px; }
+
+h2 { font-size: 3rem; }
+
+h3 { font-size: 2rem; }
+
+h4, h5, h6 { font-size: 1.5rem; }
+
+p, span { font-size: 1.075rem; }
 
 img { width: 100px; }
+
+.cta-link { text-decoration: none; font-size: 0.875em; font-weight: bolder; color: inherit; padding: 0.75em 1em; border-radius: 2px; background-color: rgba(0, 0, 0, 0.25); -webkit-transition: background-color 0.15s ease; transition: background-color 0.15s ease; }
+
+.cta-link:hover { color: inherit; background-color: var(--text); }
 
 .navbar { position: fixed; top: 0; left: 0; right: 0; padding: 3rem 4rem; background-color: transparent; }
 
@@ -20,9 +34,11 @@ img { width: 100px; }
 
 .navbar ul li .logo { color: white; font-family: var(--titles-ff); font-size: 1.5em; }
 
+.navbar ul li .logo::after { -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+
 .navbar ul li a { font-size: 0.75em; letter-spacing: 2px; font-weight: 500; text-decoration: none; color: white; text-transform: uppercase; -webkit-transition: color 0.1s ease-in-out; transition: color 0.1s ease-in-out; position: relative; }
 
-.navbar ul li a::after { content: ''; position: absolute; bottom: 0.2em; left: 0; right: 0; height: 1px; background-color: white; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.25s ease-in; transition: all 0.25s ease-in; }
+.navbar ul li a::after { content: ''; position: absolute; bottom: 0.2em; left: 0; right: 0; height: 1px; background-color: white; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.15s ease-in; transition: all 0.15s ease-in; }
 
 .navbar ul li a:hover::after { -webkit-transform: scaleX(1); transform: scaleX(1); }
 
@@ -37,3 +53,7 @@ img { width: 100px; }
 .navbar.fixed ul li a { color: var(--text); }
 
 .navbar.fixed ul li a::after { background-color: var(--text); }
+
+.banner { height: 100vh; width: 100%; background-color: var(--highlight); background-image: url(/assets/pexels-scott-webb-1029641.jpg); background-position: center 50%; background-size: cover; color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.banner span { font-size: 1.75rem; word-spacing: 0.4em; letter-spacing: 1px; text-align: right; margin-top: -0.25em; margin-bottom: 0.75em; }

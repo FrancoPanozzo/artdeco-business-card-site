@@ -22,9 +22,39 @@ h5,
 h6 {
   font-family: var(--titles-ff);
   font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0.75em;
 }
-// temporary
 
+h1 {
+  font-size: 7.75vw;
+  cursor: default;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0;
+  letter-spacing: 15px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+
+p,
+span {
+  font-size: 1.075rem;
+}
+
+// temporary
 img {
   width: 100px;
 }
