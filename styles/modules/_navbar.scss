@@ -14,7 +14,6 @@
 
     li {
       margin-right: 3rem;
-
       .logo {
         color: white;
         font-family: var(--titles-ff);
@@ -28,9 +27,21 @@
         color: white;
         text-transform: uppercase;
         transition: color 0.1s ease-in-out;
+        position: relative;
 
-        &:hover {
-          color: var(--highlight);
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0.2em;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background-color: white;
+          transform: scaleX(0);
+          transition: all 0.25s ease-in;
+        }
+        &:hover::after {
+          transform: scaleX(1);
         }
       }
     }
@@ -52,15 +63,13 @@
 
   .logo {
     color: var(--text);
-    &:hover {
-      color: var(--highlight);
-    }
   }
 
   ul li a {
     color: var(--text);
-    &:hover {
-      color: var(--highlight);
+
+    &::after {
+      background-color: var(--text);
     }
   }
 }
