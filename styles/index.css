@@ -26,7 +26,7 @@ img { width: 100px; }
 
 .cta-link:hover { color: inherit; background-color: #d20023; }
 
-.navbar { position: fixed; top: 0; left: 0; right: 0; padding: 3rem 4rem; background-color: transparent; }
+.navbar { position: fixed; top: 0; left: 0; right: 0; padding: 3rem 4rem; background-color: transparent; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .navbar ul { list-style-type: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
@@ -34,11 +34,11 @@ img { width: 100px; }
 
 .navbar ul li .logo { color: white; font-family: var(--titles-ff); font-size: 1.5em; }
 
-.navbar ul li .logo::after { -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.navbar ul li .logo::after { -webkit-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
 
-.navbar ul li a { font-size: 0.75em; letter-spacing: 2px; font-weight: 500; text-decoration: none; color: white; text-transform: uppercase; -webkit-transition: color 0.1s ease-in-out; transition: color 0.1s ease-in-out; position: relative; }
+.navbar ul li a { font-size: 0.75em; letter-spacing: 2px; font-weight: 500; text-decoration: none; color: white; text-transform: uppercase; position: relative; }
 
-.navbar ul li a::after { content: ''; position: absolute; bottom: 0.15em; left: 0; right: 0; height: 1px; background-color: white; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.15s ease-in; transition: all 0.15s ease-in; }
+.navbar ul li a::after { content: ''; position: absolute; bottom: 0.15em; left: 0; right: 0; height: 1px; background-color: white; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.15s ease-out; transition: all 0.15s ease-out; }
 
 .navbar ul li a:hover::after { -webkit-transform: scaleX(0.666); transform: scaleX(0.666); }
 
@@ -46,7 +46,7 @@ img { width: 100px; }
 
 .navbar ul li:last-child { margin-right: 0; }
 
-.navbar.fixed { padding: 1.5rem 4rem; background-color: #fff; -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.04); box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.04); }
+.navbar.fixed { padding: 1.5rem 4rem; background-color: #fff; -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.04); box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.04); -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .navbar.fixed .logo { color: var(--text); }
 
