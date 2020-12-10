@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--text-ff);
   font-weight: 300;
@@ -69,7 +73,8 @@ h6 {
 
 p,
 span {
-  font-size: 1.075rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 // temporary

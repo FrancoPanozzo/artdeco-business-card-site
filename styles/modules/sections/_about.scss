@@ -1,2 +1,47 @@
 #about {
+  h3 {
+    margin-top: 7rem;
+  }
+
+  p {
+    max-width: 850px;
+  }
+
+  ul {
+    max-width: 1080px;
+    margin-top: 3.5rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.5rem;
+    row-gap: 1.75rem;
+
+    @media screen and (max-width: 550px) {
+      grid-template-columns: 1fr;
+      row-gap: 1.75rem;
+    }
+
+    li {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+      span {
+        line-height: 1;
+        letter-spacing: 1px;
+
+        &.team-member-name {
+          margin: 0.75rem 0 0.25rem;
+          font-weight: 500;
+        }
+        &.team-member-role {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 }

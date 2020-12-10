@@ -1,6 +1,6 @@
 // Functionality to open and close the navigation menu
 // const navToggleBtn = document.querySelector('.nav-toggle');
-const navbar = document.querySelector('.navbar');
+// const navbar = document.querySelector('.navbar');
 
 // navToggleBtn.addEventListener('click', () => {
 //   const navIsFixed = Array.from(header.classList).includes('fixed');
@@ -11,7 +11,6 @@ const navbar = document.querySelector('.navbar');
 //   handleScroll();
 // });
 
-// Fucntionality to fix the navbar when scrolled
 // const debounce = (fn) => {
 //   let frame;
 //   return (...params) => {
@@ -23,6 +22,10 @@ const navbar = document.querySelector('.navbar');
 //     });
 //   };
 // };
+
+// Fucntionality to fix the navbar when scrolled
+
+const navbar = document.querySelector('.navbar');
 
 const handleScroll = () => {
   // don't action if the navbar is on active state
@@ -36,6 +39,30 @@ const handleScroll = () => {
 };
 
 document.addEventListener('scroll', handleScroll, { passive: true });
+
+// Observer method for fixing navbar
+// const navbar = document.querySelector('.navbar');
+// const sectionOne = document.querySelector('#about');
+
+// const sectionOneOptions = {
+//   rootMargin: '-200px 0px 0px 0px',
+// };
+
+// const sectionOneObserver = new IntersectionObserver(function (
+//   entries,
+//   sectionOneObserver
+// ) {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       navbar.classList.remove('fixed');
+//     } else {
+//       navbar.classList.add('fixed');
+//     }
+//   });
+// },
+// sectionOneOptions);
+
+// sectionOneObserver.observe(sectionOne);
 
 // Functionality to close the navbar when a nav link is clicked
 // const closeNavbar = (e) => {
