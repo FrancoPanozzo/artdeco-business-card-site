@@ -6,6 +6,15 @@ body {
   line-height: 1.4;
 }
 
+main {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 60px;
+  @media screen and (max-width: 1020px) {
+    padding: 0 6vw;
+  }
+}
+
 a {
   color: var(--highlight);
 

@@ -4,6 +4,10 @@
 
 body { font-family: var(--text-ff); font-weight: 300; color: var(--text); background-color: var(--background); line-height: 1.4; }
 
+main { max-width: 1020px; margin: 0 auto; padding: 0 60px; }
+
+@media screen and (max-width: 1020px) { main { padding: 0 6vw; } }
+
 a { color: var(--highlight); }
 
 a:hover { color: var(--text); }
