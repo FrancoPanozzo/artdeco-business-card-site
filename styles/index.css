@@ -1,10 +1,10 @@
 *, *::before, *::after { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-:root { --highlight: #068a01; --text: #333; --background: #fdfdfd; --text-ff: 'Hind', sans-serif; --titles-ff: 'Eczar', serif; }
+:root { --highlight: #068a01; --text: #333; --background: #fdfdfd; --secondary-background: #f9f9f9; --text-ff: 'Hind', sans-serif; --titles-ff: 'Eczar', serif; }
 
 html { scroll-behavior: smooth; }
 
-body { font-family: var(--text-ff); font-weight: 300; color: var(--text); background-color: var(--background); line-height: 1.4; }
+body { font-family: var(--text-ff); font-weight: 300; color: var(--text); background-color: var(--background); line-height: 1.4; overflow-x: hidden; }
 
 main { max-width: 1020px; margin: 0 auto; padding: 7rem 0; }
 
@@ -28,7 +28,7 @@ h3 { font-size: 2.25rem; }
 
 h4, h5, h6 { font-size: 1.5rem; }
 
-p, span { font-size: 1.2rem; line-height: 1.8; }
+p, span { font-size: 1.15rem; line-height: 1.8; }
 
 img { width: 100px; }
 
@@ -80,8 +80,21 @@ img { width: 100px; }
 
 #about ul li img { width: 100%; }
 
-#about ul li span { line-height: 1; letter-spacing: 1px; }
+#about ul li span { line-height: 1; letter-spacing: 1px; text-transform: capitalize; }
 
 #about ul li span.team-member-name { margin: 0.75rem 0 0.25rem; font-weight: 500; }
 
 #about ul li span.team-member-role { opacity: 0.5; }
+
+#services { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; }
+
+#services::before { content: ''; position: absolute; top: 0; bottom: 0; left: -100vw; right: -100vw; background-color: var(--secondary-background); z-index: -1; }
+
+#services .cta-link { padding: 0.75rem 1.25rem; -ms-flex-item-align: start; -ms-grid-row-align: start; align-self: start; font-size: 1rem; border: 1px solid #aaa; color: var(--text); }
+
+#services .cta-link:hover { background-color: var(--text); border-color: var(--text); color: white; }
+
+#services ul { list-style-type: none; display: -ms-grid; display: grid; gap: 3.5rem; margin-bottom: 3.5rem; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; }
+
+@media screen and (max-width: 775px) { #services ul { -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
+  #services ul p { max-width: 550px; } }

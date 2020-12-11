@@ -1,0 +1,45 @@
+#services {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    right: -100vw;
+    background-color: var(--secondary-background);
+    z-index: -1;
+  }
+
+  .cta-link {
+    padding: 0.75rem 1.25rem;
+    align-self: start;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    color: var(--text);
+    &:hover {
+      background-color: var(--text);
+      border-color: var(--text);
+      color: white;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: grid;
+    gap: 3.5rem;
+    margin-bottom: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 775px) {
+      grid-template-columns: 1fr;
+
+      p {
+        max-width: 550px;
+      }
+    }
+  }
+}

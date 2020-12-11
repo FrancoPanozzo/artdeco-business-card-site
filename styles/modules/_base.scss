@@ -8,6 +8,7 @@ body {
   color: var(--text);
   background-color: var(--background);
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 main {
@@ -73,7 +74,7 @@ h6 {
 
 p,
 span {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.8;
 }
 
