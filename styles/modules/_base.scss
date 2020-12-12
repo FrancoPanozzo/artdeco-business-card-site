@@ -14,13 +14,13 @@ body {
 main {
   max-width: 1020px;
   margin: 0 auto;
-  padding: 7rem 0;
+  padding: 7rem 0 0;
 
   @media screen and (max-width: 1120px) {
     margin: 0 60px;
   }
   @media screen and (max-width: 1020px) {
-    padding: 7rem 6vw;
+    padding: 7rem 6vw 0;
     margin: 0;
   }
 

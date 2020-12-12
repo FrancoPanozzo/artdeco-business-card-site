@@ -7,10 +7,11 @@
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.25);
   transition: background-color 0.25s ease;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: inherit;
-    // background-color: var(--text);
     background-color: #d20023;
   }
 }

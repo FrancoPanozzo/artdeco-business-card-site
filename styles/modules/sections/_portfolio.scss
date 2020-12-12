@@ -18,11 +18,17 @@
       flex-flow: column nowrap;
       text-decoration: none;
       color: inherit;
-      transition: transform 0.25s ease;
+      transition: all 0.25s ease;
+      outline: none;
 
-      &:hover {
+      &:hover,
+      &:focus {
         // color: inherit;
         transform: translateY(-10px);
+      }
+
+      &:focus {
+        opacity: 0.75;
       }
     }
 
