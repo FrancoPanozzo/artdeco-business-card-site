@@ -48,6 +48,27 @@
       }
     }
 
+    button {
+      cursor: pointer;
+      align-self: start;
+      border: none;
+      outline: none;
+      padding: 0.75em 1em;
+      font-size: 1em;
+      font-family: var(--text-ff);
+      background-color: var(--text);
+      color: var(--secondary-background);
+      border: 1px solid var(--text);
+      font-weight: 500;
+      transition: all 0.25s ease;
+
+      &:hover,
+      &:focus {
+        background-color: var(--secondary-background);
+        color: var(--text);
+      }
+    }
+
     > * {
       margin-bottom: 1.75rem;
     }
