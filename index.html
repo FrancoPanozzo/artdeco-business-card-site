@@ -176,18 +176,42 @@
         <form method="POST" data-netlify="true">
           <div class="form-control">
             <label for="name-field">Name:</label>
-            <input type="text" id="name-field" placeholder="Name *" />
+            <input
+              type="text"
+              id="name-field"
+              name="name"
+              placeholder="Name *"
+            />
             <label for="email-field">Email:</label>
-            <input type="email" id="email-field" placeholder="Email *" />
+            <input
+              type="email"
+              id="email-field"
+              name="email"
+              placeholder="Email *"
+            />
           </div>
           <div class="form-control">
             <label for="phone-field">Email:</label>
-            <input type="tel" id="phone-field" placeholder="Phone *" />
+            <input
+              type="tel"
+              id="phone-field"
+              name="phone"
+              placeholder="Phone *"
+            />
             <label for="subject-field">Subject:</label>
-            <input type="text" id="subject-field" placeholder="Subject *" />
+            <input
+              type="text"
+              id="subject-field"
+              name="subject"
+              placeholder="Subject *"
+            />
           </div>
           <label for="message-field">Subject:</label>
-          <textarea placeholder="Message *" id="message-field"></textarea>
+          <textarea
+            placeholder="Message *"
+            id="message-field"
+            name="message"
+          ></textarea>
           <div class="captcha-and-submit">
             <div data-netlify-recaptcha="true"></div>
             <button type="submit">Send message</button>
