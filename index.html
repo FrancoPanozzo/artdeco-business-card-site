@@ -173,7 +173,19 @@
       </section>
       <section id="contact">
         <h2>Contact us</h2>
-        <form method="POST" data-netlify="true" name="contact">
+        <form
+          method="POST"
+          data-netlify="true"
+          name="contact"
+          netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
+        >
+          <input
+            type="text"
+            id="bot-field"
+            name="bot-field"
+            style="display: none"
+          />
           <div class="form-control">
             <label for="name-field">Name:</label>
             <input
@@ -181,14 +193,14 @@
               id="name-field"
               name="name"
               placeholder="Name *"
-            ></input>
+            />
             <label for="email-field">Email:</label>
             <input
               type="email"
               id="email-field"
               name="email"
               placeholder="Email *"
-            ></input>
+            />
           </div>
           <div class="form-control">
             <label for="phone-field">Email:</label>
@@ -197,14 +209,14 @@
               id="phone-field"
               name="phone"
               placeholder="Phone *"
-            ></input>
+            />
             <label for="subject-field">Subject:</label>
             <input
               type="text"
               id="subject-field"
               name="subject"
               placeholder="Subject *"
-            ></input>
+            />
           </div>
           <label for="message-field">Subject:</label>
           <textarea
