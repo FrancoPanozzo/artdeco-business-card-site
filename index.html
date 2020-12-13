@@ -173,7 +173,7 @@
       </section>
       <section id="contact">
         <h2>Contact us</h2>
-        <form>
+        <form method="POST" data-netlify="true">
           <div class="form-control">
             <label for="name-field">Name:</label>
             <input type="text" id="name-field" placeholder="Name *" />
@@ -188,6 +188,7 @@
           </div>
           <label for="message-field">Subject:</label>
           <textarea placeholder="Message *" id="message-field"></textarea>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Send message</button>
         </form>
         <div class="contact-details">
@@ -228,6 +229,6 @@
       </ul>
     </footer>
     <script src="/navbar.js"></script>
-    <script src="/contact-form.js"></script>
+    <!-- <script src="/contact-form.js"></script> -->
   </body>
 </html>
