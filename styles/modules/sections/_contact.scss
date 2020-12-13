@@ -52,26 +52,27 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
 
-    button {
-      cursor: pointer;
-      align-self: start;
-      border: none;
-      outline: none;
-      padding: 0.75em 1em;
-      font-size: 1em;
-      font-family: var(--text-ff);
-      background-color: var(--text);
-      color: var(--secondary-background);
-      border: 1px solid var(--text);
-      font-weight: 500;
-      transition: all 0.25s ease;
+      button {
+        cursor: pointer;
+        align-self: center;
+        border: none;
+        outline: none;
+        padding: 0.75em 1em;
+        font-size: 1em;
+        font-family: var(--text-ff);
+        background-color: var(--text);
+        color: var(--secondary-background);
+        border: 1px solid var(--text);
+        font-weight: 500;
+        transition: all 0.25s ease;
+        margin-right: 3.5rem;
 
-      &:hover,
-      &:focus {
-        background-color: var(--secondary-background);
-        color: var(--text);
+        &:hover,
+        &:focus {
+          background-color: var(--secondary-background);
+          color: var(--text);
+        }
       }
     }
 
