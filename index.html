@@ -175,30 +175,28 @@
         <h2>Contact us</h2>
         <form
           method="POST"
-          data-netlify="true"
+          action="https://formspree.io/f/myybnbkz"
           name="contact"
-          netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
         >
-          <input
+          <!-- <input
             type="text"
             id="bot-field"
             name="bot-field"
             style="display: none"
-          />
+          /> -->
           <div class="form-control">
             <label for="name-field">Name:</label>
             <input
               type="text"
               id="name-field"
-              name="name-field"
+              name="name"
               placeholder="Name *"
             />
             <label for="email-field">Email:</label>
             <input
               type="email"
               id="email-field"
-              name="email-field"
+              name="email"
               placeholder="Email *"
             />
           </div>
@@ -207,14 +205,14 @@
             <input
               type="tel"
               id="phone-field"
-              name="phone-field"
+              name="phone"
               placeholder="Phone *"
             />
             <label for="subject-field">Subject:</label>
             <input
               type="text"
               id="subject-field"
-              name="subject-field"
+              name="subject"
               placeholder="Subject *"
             />
           </div>
@@ -222,7 +220,7 @@
           <textarea
             placeholder="Message *"
             id="message-field"
-            name="message-field"
+            name="message"
           ></textarea>
           <div class="captcha-and-submit">
             <div data-netlify-recaptcha="true"></div>
