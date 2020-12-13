@@ -51,6 +51,7 @@
     .captcha-and-submit {
       display: flex;
       align-items: center;
+      justify-content: space-between;
 
       button {
         cursor: pointer;
@@ -65,7 +66,6 @@
         border: 1px solid var(--text);
         font-weight: 500;
         transition: all 0.25s ease;
-        margin-right: 3.5rem;
 
         &:hover,
         &:focus {
