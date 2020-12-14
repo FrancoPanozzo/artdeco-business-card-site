@@ -133,17 +133,21 @@ img { width: 100px; }
 
 #contact form input:focus, #contact form input:active, #contact form textarea:focus, #contact form textarea:active { opacity: 1; outline: none; border-color: var(--text); }
 
-#contact form textarea { resize: vertical; }
+#contact form textarea { resize: vertical; height: 7rem; }
 
 #contact form .form-control { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+@media screen and (max-width: 550px) { #contact form .form-control { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; } }
 
 #contact form .form-control > * { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
 #contact form .form-control > *:last-child { margin-left: 3.5rem; }
 
+@media screen and (max-width: 550px) { #contact form .form-control > *:last-child { margin-left: 0; margin-top: 1.75rem; } }
+
 #contact form .captcha-and-submit { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-#contact form .captcha-and-submit button { cursor: pointer; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; border: none; outline: none; padding: 0.75em 1em; font-size: 1em; font-family: var(--text-ff); background-color: var(--text); color: var(--secondary-background); border: 1px solid var(--text); font-weight: 500; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+#contact form .captcha-and-submit button { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; cursor: pointer; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; border: none; outline: none; padding: 0.75em 1em; font-size: 1em; font-family: var(--text-ff); background-color: var(--text); color: var(--secondary-background); border: 1px solid var(--text); font-weight: 500; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
 
 #contact form .captcha-and-submit button:hover, #contact form .captcha-and-submit button:focus { background-color: var(--secondary-background); color: var(--text); }
 
@@ -153,7 +157,11 @@ img { width: 100px; }
 
 #contact .contact-details { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
+@media screen and (max-width: 550px) { #contact .contact-details { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; } }
+
 #contact .contact-details ul { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; list-style-type: none; margin-left: 3.5rem; }
+
+@media screen and (max-width: 700px) { #contact .contact-details ul { margin-left: 0rem; } }
 
 #contact .contact-details ul li { margin-bottom: 1.75rem; }
 
