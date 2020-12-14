@@ -95,7 +95,7 @@
 
   .contact-details {
     display: flex;
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 700px) {
       flex-flow: column nowrap;
     }
 
@@ -103,6 +103,9 @@
       flex: 1;
       list-style-type: none;
       margin-left: 3.5rem;
+      @media screen and (max-width: 900px) {
+        margin-left: 1.75rem;
+      }
       @media screen and (max-width: 700px) {
         margin-left: 0rem;
       }
@@ -125,7 +128,7 @@
     #google-map {
       flex: 1;
       background-image: url(/assets/map.png);
-      height: 70vh;
+      height: 400px;
     }
   }
 
