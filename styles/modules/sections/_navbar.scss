@@ -1,6 +1,7 @@
 .navbar {
   position: fixed;
   width: 100%;
+  max-width: 100vw;
   display: flex;
   flex-flow: column nowrap;
   color: white;
@@ -54,13 +55,13 @@
   }
 
   .logo {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-family: var(--titles-ff);
     margin-right: 1rem;
     white-space: nowrap;
 
     @media screen and (min-width: 400px) {
-      font-size: 1.5em;
+      font-size: 1.5rem;
     }
 
     &::after {
@@ -69,14 +70,15 @@
   }
 
   .menu-toggle {
-    width: 0.9em;
+    width: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    min-width: 15px;
 
     @media screen and (min-width: 400px) {
-      width: 1.2em;
+      width: 1.2rem;
     }
 
     @media screen and (min-width: 1000px) {
