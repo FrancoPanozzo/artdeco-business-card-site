@@ -41,6 +41,7 @@
 }
 
 .navbar .bar {
+  max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,6 +87,7 @@
 }
 
 .navbar ul {
+  max-width: 100vw;
   height: 100%;
   list-style-type: none;
   display: flex;

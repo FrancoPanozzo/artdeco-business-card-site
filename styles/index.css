@@ -48,7 +48,7 @@ img { width: 100px; }
 
 .navbar a:hover::after, .navbar a:focus::after { -webkit-transform: scaleX(0.75); transform: scaleX(0.75); outline: 0; }
 
-.navbar .bar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 3rem 3rem; background-color: transparent; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
+.navbar .bar { max-width: 100vw; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 3rem 3rem; background-color: transparent; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 @media screen and (min-width: 400px) { .navbar .bar { padding: 3rem 4rem; } }
 
@@ -64,7 +64,7 @@ img { width: 100px; }
 
 @media screen and (min-width: 1000px) { .navbar .bar .menu-toggle { display: none; } }
 
-.navbar ul { height: 100%; list-style-type: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; max-height: 0; opacity: 0; }
+.navbar ul { max-width: 100vw; height: 100%; list-style-type: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; max-height: 0; opacity: 0; }
 
 @media screen and (min-width: 1000px) { .navbar ul { height: auto; max-height: -webkit-max-content; max-height: -moz-max-content; max-height: max-content; opacity: 1; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; margin-left: auto; padding-right: 4rem; } }
 
