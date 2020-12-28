@@ -56,7 +56,13 @@ p, span { font-size: 1.15rem; line-height: 1.8; }
 
 .navbar .bar .logo::after { -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-.navbar .bar .menu-toggle { width: 0.9rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; cursor: pointer; min-width: 15px; }
+.navbar .bar .menu-toggle { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; cursor: pointer; }
+
+.navbar .bar .menu-toggle .bars { background-color: currentColor; width: 16px; height: 2px; margin-bottom: 4px; }
+
+.navbar .bar .menu-toggle .bars:last-of-type { margin-bottom: 0; }
+
+@media screen and (min-width: 400px) { .navbar .bar .menu-toggle .bars { width: 20px; height: 2px; margin-bottom: 4px; } }
 
 @media screen and (min-width: 400px) { .navbar .bar .menu-toggle { width: 1.2rem; } }
 
